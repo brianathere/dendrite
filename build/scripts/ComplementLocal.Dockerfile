@@ -6,7 +6,7 @@
 #
 # Use these mounts to make use of this dockerfile:
 # COMPLEMENT_HOST_MOUNTS='/your/local/dendrite:/dendrite:ro;/your/go/path:/go:ro'
-FROM golang:1.16-stretch
+FROM golang:1.18.2-stretch
 RUN apt-get update && apt-get install -y sqlite3
 
 WORKDIR /runtime
