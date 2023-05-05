@@ -94,7 +94,7 @@ RUN echo $'\
     } \n\
     }' > webapp/config.json
 
-FROM nginx
+FROM nginx:1-bullseye
 # Add "Service-Worker-Allowed: /" header so the worker can sniff traffic on this domain rather
 # than just the path this gets hosted under. NB this newline echo syntax only works on bash.
 SHELL ["/bin/bash", "-c"]
